@@ -1,0 +1,9 @@
+{
+  "read": {
+    "file": "/home/andsamp/Documents/input.csv"
+
+  },
+  "write": {
+    "file": "/home/andsamp/Desktop/output.csv"
+  }
+}
