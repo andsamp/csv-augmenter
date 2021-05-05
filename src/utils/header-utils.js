@@ -1,0 +1,1 @@
+export const generateDefaultHeaders = keys => keys.map(key => ({ id: key, title: key }))
