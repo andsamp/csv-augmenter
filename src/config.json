@@ -1,9 +1,13 @@
 {
   "read": {
     "file": "/home/andsamp/Documents/input.csv"
-
   },
+  "processors": [
+    "get-first-holiday",
+    "get-second-holiday",
+    "add-holiday-sentence"
+  ],
   "write": {
-    "file": "/home/andsamp/Desktop/output.csv"
+    "file": "/home/andsamp/Desktop/output-first-holiday.csv"
   }
 }

@@ -20,6 +20,7 @@ Read in a CSV, futz around with the data, write a new csv
   * `false` - there is no header row, 
   * `Array[String]` - This array will be used as the headers for the parsed file
 * `skipLines` - specifies the number of lines at the top of the file. Useful if specifying a headers array to use over the existing headers row
+### `processors` - array of processors to run the data through
 ### `write`
 * `file` - the output file that would be written
 * `headerMap` - object that maps the JSON keys to pretty names

@@ -25,12 +25,20 @@ export const main = () => {
         })
         .argv;
 
-    // TODO: parse flags and config.json to generate config object to drive processes
 
     const config = require(args.config);
 
-
+    // config.processors = processProcessors(config.processors);
 
     execute(config);
 
+}
+
+const processProcessors = processorNames => {
+    return processorNames.reduce((acc, processorName) => {
+        const processRecord = require(`./processors/${processorName}`)
+        acc.push(processRecord)
+
+        return acc;
+    }, [])
 }
